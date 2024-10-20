@@ -16,4 +16,4 @@ def test_create_order_and_get_order_information():
     track_id = response.json()["track"]
     order_response = get_order(track_id)
     assert order_response.status_code == 200, "Ошибка: " + str(order_response.status_code)
-    order_data = order_response.json()
+   
